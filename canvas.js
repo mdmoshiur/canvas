@@ -39,11 +39,11 @@ function Circle(x, y, radius, dx, dy, fillColor){
 var circleArray = [];
 
 for( var i = 0; i<100; i++){
-  var radius = Math.random()* 20 + 5;
+  var radius = Math.random()* 18 + 7;
   var x = Math.random() * (w - radius * 2) + radius;
   var y = Math.random() * (h - radius * 2) + radius;
-  var dx = (Math.random() - 0.5) * 4;
-  var dy = (Math.random() - 0.5) * 4;
+  var dx = (Math.random() - 0.5) * 2;
+  var dy = (Math.random() - 0.5) * 2;
   var fillColor = colors[Math.floor(i%colors.length)];
   circleArray.push(new Circle(x,y,radius,dx,dy,fillColor));
 }
